@@ -45,7 +45,7 @@ const Landing = () => {
           <div className="container">
             <div className="row">
               <div className="col s12 center">
-                <h4>For Managers, By Developers</h4>
+                <h4>For Managers, By Harsh Thakkar</h4>
               </div>
             </div>
           </div>
@@ -121,9 +121,9 @@ const Landing = () => {
               <div className="col s6">
                 <h5>Location</h5>
                 <ul>
-                  <li>Emaily Solutions, INC</li>
-                  <li> Hüttenstr. 19, Dinslaken</li>
-                  <li> Germany</li>
+                  <li>Emaily Solutions By Harsh Thakkar</li>
+                  <li> Montreal, Canada</li>
+                 
                 </ul>
               </div>
               <div className="col s4 offset-s2">
@@ -131,7 +131,7 @@ const Landing = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://zarzour.de"
+                      href="https://ca.linkedin.com/in/iamharshthakkar"
                       target="_blank"
                       className="white-text"
                       rel="noopener noreferrer"
@@ -141,7 +141,7 @@ const Landing = () => {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/Malekz"
+                      href="https://github.com/iamharshthakkar"
                       target="_blank"
                       className="white-text"
                       rel="noopener noreferrer"
