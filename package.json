@@ -15,7 +15,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "webhook": "ssh -R emailysolutions:80:localhost:5000 serveo.net"
   },
-  "author": "",
+  "author": "Harsh Thakkar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
