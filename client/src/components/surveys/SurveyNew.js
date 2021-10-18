@@ -1,12 +1,22 @@
-// SurveyNew shows SurveyForm and SurveyFormReview
+// This should be a class-based component
+// 'SurveyNew' shows 'SurveyForm' and 'SurveyFormReview'
 import React, { Component } from "react";
 import { reduxForm } from "redux-form";
 import SurveyForm from "./SurveyForm";
 import SurveyFormReview from "./SurveyFormReview";
 
 class SurveyNew extends Component {
+  // Component-level state as a flag to toggle visibility
+  // This line is equivalent to:
+  /*
+    constructor(props) {
+      super(props);
+      this.state = { showFormReview: false };
+    }
+  */
   state = { showFormReview: false };
 
+  // Helper function to render content
   renderContent() {
     if (this.state.showFormReview) {
       return (
@@ -15,7 +25,6 @@ class SurveyNew extends Component {
         />
       );
     }
-
     return (
       <SurveyForm
         onSurveySubmit={() => this.setState({ showFormReview: true })}
@@ -24,10 +33,16 @@ class SurveyNew extends Component {
   }
 
   render() {
-    return <div>{this.renderContent()}</div>;
+    return (
+      <div className="container container-main">
+        <h3>Create Survey</h3>
+        {this.renderContent()}
+      </div>
+    );
   }
 }
 
+// Use 'reduxForm' helper to clean form data when a user left the page.
 export default reduxForm({
   form: "surveyForm"
 })(SurveyNew);

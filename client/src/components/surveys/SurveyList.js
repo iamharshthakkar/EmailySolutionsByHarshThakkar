@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
+// Import the action creator
 import { fetchSurveys } from "../../actions";
 
 class SurveyList extends Component {
@@ -7,10 +8,12 @@ class SurveyList extends Component {
     this.props.fetchSurveys();
   }
 
+  // Helper method the render surveys
   renderSurveys() {
-    return this.props.surveys.reverse().map(survey => {
-      return (
-        <Fragment>
+    if (this.props.surveys.length > 0) {
+      // 'reverse()' will show the newest survey on the top
+      return this.props.surveys.reverse().map(survey => {
+        return (
           <div className="card darken-1" key={survey._id}>
             <div className="card-content">
               <span className="card-title">{survey.title}</span>
@@ -24,9 +27,11 @@ class SurveyList extends Component {
               <a>No: {survey.no}</a>
             </div>
           </div>
-        </Fragment>
-      );
-    });
+        );
+      });
+    } else {
+      return <p>Please create your first survey</p>;
+    }
   }
 
   render() {
@@ -34,11 +39,9 @@ class SurveyList extends Component {
   }
 }
 
+// Destructured `state`
 function mapStateToProps({ surveys }) {
   return { surveys };
 }
 
-export default connect(
-  mapStateToProps,
-  { fetchSurveys }
-)(SurveyList);
+export default connect(mapStateToProps, { fetchSurveys })(SurveyList);

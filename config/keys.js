@@ -1,9 +1,9 @@
-/// keys.js - figure out what set of credentials to return
-
+// Determine whether we are in production env
+// This is injected by Heroku
 if (process.env.NODE_ENV === "production") {
-  // we are in production - return the prod set of keys
+  // We are in production
   module.exports = require("./prod");
 } else {
-  // we are in development - return the dev keys!!
+  // We are in dev env
   module.exports = require("./dev");
 }

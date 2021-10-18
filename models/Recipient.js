@@ -6,4 +6,5 @@ const recipientSchema = new Schema({
   responded: { type: Boolean, default: false }
 });
 
+// Not register this schema with mongoose, we need to export it.
 module.exports = recipientSchema;
