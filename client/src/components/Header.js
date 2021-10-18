@@ -13,7 +13,7 @@ class Header extends Component {
         return [
           <li key="1">
             <a
-              href="https://github.com/qqqlllyyyy/emaily-survey-app"
+              href="https://github.com/iamharshthakkar/EmailySolutionsByHarshThakkar"
               target="_blank"
             >
               <i className="fa fa-code fa-lg" /> View Code

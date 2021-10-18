@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qqqlllyyyy/ReactNode.git"
+    "url": "git+https://github.com/iamharshthakkar/EmailySolutionsByHarshThakkar/"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/qqqlllyyyy/ReactNode/issues"
+    "url": "https://github.com/iamharshthakkar/EmailySolutionsByHarshThakkar/issues"
   },
-  "homepage": "https://github.com/qqqlllyyyy/ReactNode#readme",
+  "homepage": "https://github.com/iamharshthakkar/EmailySolutionsByHarshThakkar/blob/master/README.md",
   "dependencies": {
     "async": "^2.5.0",
     "body-parser": "^1.18.1",
